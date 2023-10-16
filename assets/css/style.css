@@ -1,0 +1,468 @@
+@charset "utf-8";
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -.7em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/*for all*/
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1166px;
+  width: 76%;
+  margin: 0 auto;
+}
+
+.transition-ease {
+  transition: .3s all ease;
+}
+
+/*=================================
+  Header styling starts here
+=================================*/
+
+body {
+  background-color: #1f1f1f;
+}
+
+header .wrapper {
+  padding: 40px 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+}
+
+h1 a {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list li:last-child {
+  margin-right: 0;
+}
+
+.nav-list a {
+  padding: 5px 0 15px 0;
+  font-size: 13px;
+  color: #e6e6e6;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.nav-list a:hover {
+  color: #90d0a8;
+}
+
+.active {
+  border-bottom: 4px solid #90d0a8;
+}
+
+/*=================================
+  Header styling ends here
+=================================*/
+
+/*=================================
+  main styling starts here
+=================================*/
+
+/* categories section start */
+
+.categories-section .wrapper {
+  border-top: 2px solid #292929;
+  border-bottom: 2px solid #292929;
+}
+
+.all {
+  margin-bottom: 38px;
+}
+
+.categories-list {
+  padding: 20px 0;
+}
+
+.categories-list a {
+  padding: 9px;
+  font-size: 13px;
+  color: #ebebeb;
+  letter-spacing: 1px;
+}
+
+.categories-list li {
+  margin: 0 2px;
+}
+
+.categories-list a:hover {
+  background-color: #90d0a8;
+}
+
+.all {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.all-items {
+  flex-basis: 25%;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+}
+
+/* categories section end */
+
+/*=================================
+  main styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/
+
+footer {
+  padding-top: 35px;
+}
+
+.upper-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.upper-footer>* {
+  flex-basis: 22%;
+}
+
+.heading {
+  color: #fefefe;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.para {
+  color: #757575;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.text .para {
+  margin-bottom: 25px;
+}
+
+.recent p {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.recent p:last-child {
+  border-bottom: 0;
+  margin-bottom: 5px;
+}
+
+.popular-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popular li {
+  margin: 0 10px 10px 0;
+}
+
+.popular li a {
+  padding: 8px 12px;
+  background-color: #90d0a8;
+  color: #fff;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.popular li a:hover {
+  background-color: #c1c1c1;
+}
+
+.flickr-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flickr li {
+  margin: 0 8px 8px 0;
+  flex-basis: 21%;
+}
+
+.lower-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 0;
+}
+
+.social-icons a {
+  width: 10px;
+  height: 10px;
+  padding: 6px;
+  margin-right: 6px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #f3f3f3;
+  text-indent: -99999px;
+}
+
+.social-icons a::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "fontAwesome";
+  color: #7c7c7c;
+  font-size: 10px;
+  float: right;
+  text-indent: 0;
+  cursor: pointer;
+  transition: .3s all ease;
+  transform: translate(-50%, -50%);
+}
+
+.facebook a::before { content: "\f09a"; }
+.google a::before { content: "\f0d5"; }
+.na a::before { content: "\f16d"; }
+.pinterest a::before { content: "\f0d2"; }
+.twitter a::before { content: "\f099"; }
+.linkedin a::before { content: "\f08c"; }
+
+.social-icons a:hover {
+  background-color: #90d0a8;
+  color: #fff;
+}
+
+.all-items { cursor: pointer; }
+
+.modal-image {
+  display: none;
+  text-align: center;
+  padding: 100px;
+  background-color: #00000080;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  position: absolute;
+  color: #fff;
+  top: 1%;
+  right: 1%;
+}
+
+.close:hover { color: #808080; }
+.no-scroll { overflow-y: hidden; }
+.img { transform: scale(1.2); }
+
+/*=================================
+  footer styling ends here
+=================================*/
+
+/*media query starts*/
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {}
